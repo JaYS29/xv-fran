@@ -1,0 +1,98 @@
+.countdown-section {
+  background: linear-gradient(160deg, var(--c0) 0%, var(--c2) 100%);
+  padding: calc(7vw + 90px) 2rem calc(7vw + 90px);
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* subtle grain in bg */
+.countdown-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  pointer-events: none;
+}
+
+.cd-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cd-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+  color: var(--c5);
+}
+
+.cd-units {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.cd-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 clamp(0.6rem, 2vw, 1.8rem);
+  position: relative;
+}
+
+.cd-colon {
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  color: var(--c3);
+  align-self: flex-start;
+  padding-top: 0.2rem;
+  line-height: 1;
+}
+
+.cd-number {
+  font-family: var(--font-title);
+  font-size: clamp(3.5rem, 11vw, 8rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.cd-label {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--c5);
+  margin-top: 0.35rem;
+}
+
+.cd-rule {
+  width: 44px;
+  height: 1px;
+  background: var(--c3);
+}
+
+.cd-date {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--c5);
+  letter-spacing: 0.2em;
+}

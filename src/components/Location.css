@@ -1,0 +1,84 @@
+.location-section {
+  background: linear-gradient(175deg, var(--c1) 0%, var(--c0) 100%);
+  padding: calc(7vw + 90px) 2rem 80px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.loc-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.loc-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+  color: var(--c5);
+}
+
+.loc-rule {
+  width: 44px;
+  height: 1px;
+  background: var(--c4);
+}
+
+.loc-venue {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.loc-address {
+  font-family: var(--font-body);
+  font-size: clamp(0.82rem, 2vw, 1rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--c5);
+  letter-spacing: 0.15em;
+}
+
+.loc-map-wrap {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--c3);
+  filter: grayscale(100%) contrast(1.05) brightness(0.85);
+  transition: filter 0.4s ease;
+  margin-top: 0.5rem;
+}
+
+.loc-map-wrap:hover {
+  filter: grayscale(60%) contrast(1.02) brightness(0.95);
+}
+
+.loc-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--c9);
+  border: 1px solid var(--c4);
+  padding: 1rem 2.8rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  margin-top: 0.5rem;
+}
+
+.loc-btn:hover {
+  background: var(--c3);
+  border-color: var(--c6);
+  color: var(--white);
+}

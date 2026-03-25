@@ -1,0 +1,70 @@
+.invitation-section {
+  background: linear-gradient(170deg, var(--c1) 0%, var(--c0) 100%);
+  padding: calc(7vw + 80px) 2rem calc(7vw + 80px);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.inv-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inv-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+  color: var(--c5);
+}
+
+.inv-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5.5vw, 3.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--c9);
+  line-height: 1.2;
+}
+
+.inv-rule {
+  width: 44px;
+  height: 1px;
+  background: var(--c4);
+}
+
+.inv-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 300;
+  color: var(--c5);
+  letter-spacing: 0.12em;
+}
+
+.inv-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--c9);
+  border: 1px solid var(--c4);
+  padding: 1rem 2.8rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  margin-top: 0.5rem;
+}
+
+.inv-btn:hover {
+  background: var(--c3);
+  border-color: var(--c6);
+  color: var(--white);
+}
