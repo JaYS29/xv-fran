@@ -87,10 +87,26 @@
 @media (max-width: 640px) {
   .location-section {
     padding: calc(8vw + 48px) 1.25rem 60px;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
   }
 
   .loc-inner {
-    gap: 1rem;
+    gap: 1.1rem;
+    width: 100%;
+  }
+
+  .loc-eyebrow {
+    font-size: 0.78rem;
+  }
+
+  .loc-venue {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .loc-address {
+    font-size: 0.9rem;
   }
 
   .loc-map-wrap iframe {
@@ -101,6 +117,7 @@
     width: 100%;
     text-align: center;
     padding: 1rem 1.5rem;
+    font-size: 0.85rem;
   }
 }
 
