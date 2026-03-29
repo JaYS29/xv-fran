@@ -51,15 +51,16 @@ export default function Hero({ photoUrl }) {
         <motion.p className="hero-xv" variants={fadeUp}>
           XV Años
         </motion.p>
-
         <motion.div className="hero-rule" variants={scaleIn} />
-
         <motion.p className="hero-date" variants={fadeUp}>
-          16 · 05 · 2026
-        </motion.p>
-
+          Sábado 16 de Mayo
+        </motion.p>{" "}
+        <motion.p className="hero-date" variants={fadeUp}>
+          2026
+        </motion.p>{" "}
+        <br />
         <motion.p className="hero-time" variants={fadeUp}>
-          20 : 30 hs.
+          20:30hs a 04:00hs
         </motion.p>
       </motion.div>
     </section>

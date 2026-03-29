@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Invitation from './components/Invitation'
 import DressCode from './components/DressCode'
 import Countdown from './components/Countdown'
+import Gift from './components/Gift'
 import Location from './components/Location'
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
       <Invitation />
       <DressCode />
       <Countdown />
+      <Gift />
       <Location />
     </main>
   )

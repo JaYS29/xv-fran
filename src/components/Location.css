@@ -2,7 +2,7 @@
   background: linear-gradient(175deg, var(--pale_sage) 0%, var(--cornsilk) 100%);
   padding: calc(7vw + 90px) 2rem 80px;
   position: relative;
-  z-index: 5;
+  z-index: 6;
   text-align: center;
 }
 
