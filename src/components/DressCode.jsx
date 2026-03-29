@@ -16,7 +16,7 @@ export default function DressCode() {
         </h2>
         <div className="dc-rule" data-reveal />
         <p className="dc-no-label" data-reveal>
-          Por favor evitar los colores
+          Por favor evitar el color
         </p>
         <div className="dc-colors" data-reveal>
           <span>Blanco</span>
