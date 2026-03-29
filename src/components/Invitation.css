@@ -1,5 +1,5 @@
 .invitation-section {
-  background: linear-gradient(170deg, var(--c1) 0%, var(--c0) 100%);
+  background: linear-gradient(170deg, var(--pale_sage) 0%, var(--cornsilk) 100%);
   padding: calc(7vw + 80px) 2rem calc(7vw + 80px);
   position: relative;
   z-index: 2;
@@ -21,7 +21,7 @@
   font-weight: 400;
   letter-spacing: 0.55em;
   text-transform: uppercase;
-  color: var(--c5);
+  color: var(--c4);
 }
 
 .inv-headline {
@@ -29,28 +29,28 @@
   font-size: clamp(2rem, 5.5vw, 3.8rem);
   font-weight: 400;
   font-style: italic;
-  color: var(--c9);
+  color: var(--c0);
   line-height: 1.2;
 }
 
 .inv-rule {
   width: 44px;
   height: 1px;
-  background: var(--c4);
+  background: var(--dry_sage);
 }
 
 .inv-sub {
   font-family: var(--font-body);
   font-size: clamp(0.85rem, 2vw, 1rem);
   font-weight: 300;
-  color: var(--c5);
+  color: var(--c4);
   letter-spacing: 0.12em;
 }
 
 .inv-btn {
   display: inline-block;
   background: transparent;
-  color: var(--c9);
+  color: var(--c1);
   border: 1px solid var(--c4);
   padding: 1rem 2.8rem;
   font-family: var(--font-body);
@@ -64,7 +64,30 @@
 }
 
 .inv-btn:hover {
-  background: var(--c3);
-  border-color: var(--c6);
-  color: var(--white);
+  background: var(--papaya_whip);
+  border-color: var(--light_bronze);
+  color: var(--c0);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 640px) {
+  .invitation-section {
+    padding: calc(8vw + 48px) 1.25rem calc(6vw + 48px);
+  }
+
+  .inv-inner {
+    gap: 1.2rem;
+  }
+
+  .inv-btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inv-inner {
+    max-width: 720px;
+  }
 }

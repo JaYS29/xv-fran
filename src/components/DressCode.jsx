@@ -20,10 +20,6 @@ export default function DressCode() {
         </p>
         <div className="dc-colors" data-reveal>
           <span>Blanco</span>
-          <span className="dc-sep">—</span>
-          <span>Verde</span>
-          <span className="dc-sep">—</span>
-          <span>Azul</span>
         </div>
       </div>
     </section>

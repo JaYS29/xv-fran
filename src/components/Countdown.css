@@ -1,5 +1,5 @@
 .countdown-section {
-  background: linear-gradient(160deg, var(--c0) 0%, var(--c2) 100%);
+  background: linear-gradient(160deg, var(--cornsilk) 0%, var(--papaya_whip) 100%);
   padding: calc(7vw + 90px) 2rem calc(7vw + 90px);
   position: relative;
   z-index: 4;
@@ -35,7 +35,7 @@
   font-weight: 400;
   letter-spacing: 0.55em;
   text-transform: uppercase;
-  color: var(--c5);
+  color: var(--c4);
 }
 
 .cd-units {
@@ -57,7 +57,7 @@
 .cd-colon {
   font-family: var(--font-title);
   font-size: clamp(3rem, 8vw, 5.5rem);
-  color: var(--c3);
+  color: var(--dry_sage);
   align-self: flex-start;
   padding-top: 0.2rem;
   line-height: 1;
@@ -67,7 +67,7 @@
   font-family: var(--font-title);
   font-size: clamp(3.5rem, 11vw, 8rem);
   font-weight: 400;
-  color: var(--white);
+  color: var(--c0);
   line-height: 1;
   letter-spacing: 0.03em;
 }
@@ -78,14 +78,14 @@
   font-weight: 300;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--c5);
+  color: var(--c4);
   margin-top: 0.35rem;
 }
 
 .cd-rule {
   width: 44px;
   height: 1px;
-  background: var(--c3);
+  background: var(--dry_sage);
 }
 
 .cd-date {
@@ -93,6 +93,42 @@
   font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 300;
   font-style: italic;
-  color: var(--c5);
+  color: var(--c4);
   letter-spacing: 0.2em;
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 640px) {
+  .countdown-section {
+    padding: calc(8vw + 48px) 1.25rem calc(6vw + 48px);
+  }
+
+  .cd-units {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cd-unit {
+    padding: 0 clamp(0.4rem, 2.5vw, 1rem);
+  }
+
+  .cd-number {
+    font-size: clamp(2.8rem, 10vw, 4rem);
+  }
+
+  .cd-label {
+    font-size: 0.55rem;
+  }
+
+  .cd-date {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media (max-width: 380px) {
+  .cd-number {
+    font-size: clamp(2.2rem, 9vw, 2.8rem);
+  }
 }

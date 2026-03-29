@@ -1,33 +1,47 @@
-:root {
-  --c0: #0c0c0c;
-  --c1: #141414;
-  --c2: #1e1e1e;
-  --c3: #2a2a2a;
-  --c4: #3d3d3d;
-  --c5: #5c5c5c;
-  --c6: #8a8a8a;
-  --c7: #b8b8b8;
-  --c8: #d8d8d8;
-  --c9: #f0f0f0;
-  --white: #f5f5f5;
+@import "tailwindcss";
 
-  --font-display: 'DM Serif Display', serif;
-  --font-title:   'Bebas Neue', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
+:root {
+  --c0: #2c1a0a;
+  --c1: #3d2614;
+  --c2: #4e341e;
+  --c3: #66452c;
+  --c4: #8c6040;
+  --c5: #a07858;
+  --c6: #b89070;
+  --c7: #d4a373;
+  --c8: #e8d0b0;
+  --c9: #f5ece0;
+  --white: #fefae0;
+
+  /* Palette */
+  --beige: rgba(253, 246, 219, 0.702);
+  --dry_sage: #ccd5ae;
+  --pale_sage: #e9edc9;
+  --cornsilk: #fefae0;
+  --papaya_whip: #faedcd;
+  --light_bronze: #d4a373;
+
+  --font-display: "DM Serif Display", serif;
+  --font-title: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-body);
-  background: var(--c0);
-  color: var(--white);
+  background: var(--cornsilk);
+  color: var(--c0);
   overflow-x: hidden;
 }
 

@@ -45,10 +45,6 @@ export default function Hero({ photoUrl }) {
         initial="hidden"
         animate="show"
       >
-        <motion.p className="hero-eyebrow" variants={fadeUp}>
-          te invita a celebrar
-        </motion.p>
-
         <motion.h1 className="hero-name" variants={fadeUp}>
           Fran
         </motion.h1>

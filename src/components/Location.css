@@ -1,5 +1,5 @@
 .location-section {
-  background: linear-gradient(175deg, var(--c1) 0%, var(--c0) 100%);
+  background: linear-gradient(175deg, var(--pale_sage) 0%, var(--cornsilk) 100%);
   padding: calc(7vw + 90px) 2rem 80px;
   position: relative;
   z-index: 5;
@@ -21,20 +21,20 @@
   font-weight: 400;
   letter-spacing: 0.55em;
   text-transform: uppercase;
-  color: var(--c5);
+  color: var(--c4);
 }
 
 .loc-rule {
   width: 44px;
   height: 1px;
-  background: var(--c4);
+  background: var(--dry_sage);
 }
 
 .loc-venue {
   font-family: var(--font-title);
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 400;
-  color: var(--white);
+  color: var(--c0);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -44,14 +44,14 @@
   font-size: clamp(0.82rem, 2vw, 1rem);
   font-weight: 300;
   font-style: italic;
-  color: var(--c5);
+  color: var(--c4);
   letter-spacing: 0.15em;
 }
 
 .loc-map-wrap {
   width: 100%;
   overflow: hidden;
-  border: 1px solid var(--c3);
+  border: 1px solid var(--dry_sage);
   filter: grayscale(100%) contrast(1.05) brightness(0.85);
   transition: filter 0.4s ease;
   margin-top: 0.5rem;
@@ -64,7 +64,7 @@
 .loc-btn {
   display: inline-block;
   background: transparent;
-  color: var(--c9);
+  color: var(--c1);
   border: 1px solid var(--c4);
   padding: 1rem 2.8rem;
   font-family: var(--font-body);
@@ -78,7 +78,34 @@
 }
 
 .loc-btn:hover {
-  background: var(--c3);
-  border-color: var(--c6);
-  color: var(--white);
+  background: var(--papaya_whip);
+  border-color: var(--light_bronze);
+  color: var(--c0);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 640px) {
+  .location-section {
+    padding: calc(8vw + 48px) 1.25rem 60px;
+  }
+
+  .loc-inner {
+    gap: 1rem;
+  }
+
+  .loc-map-wrap iframe {
+    height: 240px;
+  }
+
+  .loc-btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .loc-map-wrap iframe {
+    height: 420px;
+  }
 }

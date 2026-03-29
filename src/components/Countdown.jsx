@@ -51,7 +51,8 @@ export default function Countdown() {
         </div>
         <div className="cd-rule" data-reveal />
         <p className="cd-date" data-reveal>
-          16 de Mayo · 2026 · 20:30 hs
+          Sábado 16 de Mayo · 2026 · <br />
+          20.30hs a 04.00hs
         </p>
       </div>
     </section>
